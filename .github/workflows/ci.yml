@@ -11,32 +11,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        - uses: actions/checkout@v4
-        - uses: actions/setup-node@v4
-          with:
-            node-version: 20
-            cache: npm
-
-        - name: Install dependencies
-          run: npm ci
-
-        - name: Svelte check
-          run: npm run check
-
-        - name: Lint
-          run: npm run lint
-
-        - name: Unit tests
-          run: npm run test:unit
-
-        - name: Build
-          run: npm run build
-
-  tests_e2e:
-    name: Run end-to-end tests
-    runs-on: ubuntu-latest
-
-    steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
@@ -46,8 +20,36 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install playwright browsers
-        run: npx playwright install --with-deps
+      - name: Svelte check
+        run: npm run check
 
-      - name: Run tests
-        run: npx playwright test
+      - name: Lint
+        run: npm run lint
+
+      - name: Unit tests
+        run: npm run test:unit
+
+      - name: Build
+        run: npm run build
+
+  # Disabled while there are no e2e tests
+
+  # tests_e2e:
+  #   name: Run end-to-end tests
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 20
+  #         cache: npm
+
+  #     - name: Install dependencies
+  #       run: npm ci
+
+  #     - name: Install playwright browsers
+  #       run: npx playwright install --with-deps
+
+  #     - name: Run tests
+  #       run: npx playwright test
