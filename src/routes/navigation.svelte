@@ -3,7 +3,7 @@
 
 	let navigation_items = [
 		{ route: '/', label: 'About' },
-		{ route: '/projects', label: 'Portfolio' },
+		{ route: '/portfolio', label: 'Portfolio' },
 		{ route: '/cv', label: 'CV' }
 	];
 </script>
