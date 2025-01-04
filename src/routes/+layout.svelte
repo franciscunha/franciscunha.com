@@ -32,8 +32,10 @@
 				{item.label}
 			</a>
 			{#if i + 1 != navigation_items.length}
-				<!-- pipe character followed by a space -->
-				|&nbsp;
+				<!-- on large screens: pipe character followed by a space -->
+				<span class="max-md:hidden">|&nbsp;</span>
+				<!-- on small screens: new line -->
+				<span class="md:hidden"><br /></span>
 			{/if}
 		{/each}
 	</div>
