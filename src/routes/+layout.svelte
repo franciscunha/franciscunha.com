@@ -1,14 +1,9 @@
 <script lang="ts">
 	import '../app.css';
-	import { page } from '$app/state';
+	import LoopingStrings from './looping_strings.svelte';
+	import Navigation from './navigation.svelte';
 
 	let { children } = $props();
-
-	let navigation_items = [
-		{ route: '/', label: 'About' },
-		{ route: '/projects', label: 'Portfolio' },
-		{ route: '/cv', label: 'CV' }
-	];
 </script>
 
 <!-- Header -->
@@ -19,27 +14,10 @@
 		<!-- Title -->
 		<div>
 			<h1 class="text-4xl">Francisco Cunha</h1>
-			<h2 class="text-2xl">Developer, or some other title</h2>
+			<LoopingStrings strings={['Game developer', 'Graphics programmer', 'Web developer']} />
 		</div>
 
-		<!-- Navigation -->
-		<div class="text-2xl">
-			{#each navigation_items as item, i}
-				<a
-					href={item.route}
-					class={{ 'font-semibold': page.url.pathname === item.route }}
-					aria-current={page.url.pathname === item.route}
-				>
-					{item.label}
-				</a>
-				{#if i + 1 != navigation_items.length}
-					<!-- on large screens: pipe character -->
-					<span class="max-md:hidden">|</span>
-					<!-- on small screens: new line -->
-					<span class="md:hidden"><br /></span>
-				{/if}
-			{/each}
-		</div>
+		<Navigation />
 	</div>
 </div>
 
