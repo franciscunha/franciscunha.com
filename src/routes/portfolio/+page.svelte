@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ProjectCard from '$lib/project_card.svelte';
 	import Tag from '$lib/tag.svelte';
-	import FilterIcon from './filter_icon.svelte';
+	import FilterIcon from '../../lib/icons/filter_icon.svelte';
 
 	import { flip } from 'svelte/animate';
 	import { crossfade } from 'svelte/transition';
