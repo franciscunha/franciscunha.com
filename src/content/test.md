@@ -1,6 +1,7 @@
 ---
 name: Cloud Hopper
 cover: /images/test/cover.png
+highlight: true
 summary: Jump amongst the clouds in a cute sky archipelago in this short (~20 min) 3D platformer. Can you reach the island at the top?
 year: 2024
 tags:

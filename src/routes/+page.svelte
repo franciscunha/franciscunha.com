@@ -3,6 +3,7 @@
 	import GithubIcon from '$lib/icons/github_icon.svelte';
 	import ItchioIcon from '$lib/icons/itchio_icon.svelte';
 	import LinkedinIcon from '$lib/icons/linkedin_icon.svelte';
+	import { get_highlighted } from '$lib/load_project';
 	import ProjectCard from '$lib/project_card.svelte';
 
 	let socials = [
@@ -16,9 +17,9 @@
 		{ href: 'https://moonsheep.itch.io/', label: 'moonsheep.itch.io', icon: ItchioIcon }
 	];
 
-	let highlighted_projects = ['test'];
-
+	let highlighted_projects = get_highlighted();
 	let project_index = $state(0);
+	let project_id = $derived(highlighted_projects[project_index]);
 </script>
 
 <div class="flex w-full place-items-center gap-24 max-md:flex-col-reverse md:flex-row">
@@ -55,7 +56,9 @@
 		</h2>
 
 		<div class="w-max">
-			<ProjectCard id={highlighted_projects[project_index]} />
+			{#key project_id}
+				<ProjectCard id={project_id} />
+			{/key}
 			<div class="flex w-full flex-row justify-center gap-2">
 				{#each highlighted_projects as _, i}
 					<button onclick={() => (project_index = i)}>

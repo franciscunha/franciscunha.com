@@ -36,3 +36,14 @@ export function get_all_tags() {
     }
     return [...new Set(tags)]; 
 }
+
+export function get_highlighted() {
+    const files = import.meta.glob("../content/*.md", {eager: true});
+    let ids: string[] = [];
+    for (const path in files) {
+        if (files[path].metadata.highlight) {
+            ids = [...ids, path.split('/')[2].split('.')[0]]
+        }
+    }
+    return ids; 
+}
