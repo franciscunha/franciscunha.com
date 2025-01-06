@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { get_all_project_ids, get_all_tags } from '$lib/load_project';
 	import ProjectCard from '$lib/project_card.svelte';
 	import Tag from '$lib/tag.svelte';
 	import FilterIcon from '../../lib/icons/filter_icon.svelte';
@@ -6,10 +7,8 @@
 	import { flip } from 'svelte/animate';
 	import { crossfade } from 'svelte/transition';
 
-	// TODO get data programatically
-
-	let projects = ['test'];
-	let tags = ['Tag 1', 'Tag 2', 'Tag 3'];
+	let projects = get_all_project_ids();
+	let tags = get_all_tags();
 
 	let selected_tags = $state(tags);
 	let unselected_tags: string[] = $state([]);
