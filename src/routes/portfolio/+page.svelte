@@ -8,11 +8,7 @@
 
 	// TODO get data programatically
 
-	let projects = [
-		'https://img.itch.zone/aW1nLzE5MTY1MjQ1LnBuZw==/315x250%23c/YfVUJ%2F.png',
-		'https://img.itch.zone/aW1nLzE5MTY1MjQ1LnBuZw==/315x250%23c/YfVUJ%2F.png',
-		'https://img.itch.zone/aW1nLzE5MTY1MjQ1LnBuZw==/315x250%23c/YfVUJ%2F.png'
-	];
+	let projects = ['test'];
 	let tags = ['Tag 1', 'Tag 2', 'Tag 3'];
 
 	let selected_tags = $state(tags);
@@ -77,7 +73,7 @@
 
 <!-- Project cards -->
 <div class="flex flex-row flex-wrap gap-12 max-md:justify-center md:justify-between">
-	{#each projects as src}
-		<ProjectCard {src} />
+	{#each projects as id}
+		<ProjectCard {id} />
 	{/each}
 </div>

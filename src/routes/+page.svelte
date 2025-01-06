@@ -7,21 +7,16 @@
 
 	let socials = [
 		{ href: 'mailto:hello@franciscunha.com', label: 'hello@franciscunha.com', icon: EmailIcon },
-		{ href: 'https://github.com/franciscunha', label: 'github.com/franciscunha', icon: GithubIcon },
+		{ href: 'https://github.com/franciscunha', label: 'franciscunha', icon: GithubIcon },
 		{
 			href: 'https://www.linkedin.com/in/francunha/',
-			label: 'linkedin.com/in/francunha',
+			label: '/in/francunha',
 			icon: LinkedinIcon
 		},
 		{ href: 'https://moonsheep.itch.io/', label: 'moonsheep.itch.io', icon: ItchioIcon }
 	];
 
-	let highlighted_projects = [
-		'https://img.itch.zone/aW1nLzE5MTY1MjQ1LnBuZw==/315x250%23c/YfVUJ%2F.png',
-		'https://img.itch.zone/aW1nLzEyNzI3OTQxLnBuZw==/315x250%23c/dXkSG1.png',
-		'https://img.itch.zone/aW1nLzE5MTY1MjQ1LnBuZw==/315x250%23c/YfVUJ%2F.png',
-		'https://img.itch.zone/aW1nLzEyNzI3OTQxLnBuZw==/315x250%23c/dXkSG1.png'
-	];
+	let highlighted_projects = ['test'];
 
 	let project_index = $state(0);
 </script>
@@ -60,7 +55,7 @@
 		</h2>
 
 		<div class="w-max">
-			<ProjectCard src={highlighted_projects[project_index]} />
+			<ProjectCard id={highlighted_projects[project_index]} />
 			<div class="flex w-full flex-row justify-center gap-2">
 				{#each highlighted_projects as _, i}
 					<button onclick={() => (project_index = i)}>
