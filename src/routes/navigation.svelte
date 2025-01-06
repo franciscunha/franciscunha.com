@@ -3,8 +3,9 @@
 
 	let navigation_items = [
 		{ route: '/', label: 'About' },
-		{ route: '/portfolio', label: 'Portfolio' },
-		{ route: '/cv', label: 'CV' }
+		{ route: '/portfolio', label: 'Portfolio' }
+		// TODO: CV page
+		// { route: '/cv', label: 'CV' }
 	];
 </script>
 
