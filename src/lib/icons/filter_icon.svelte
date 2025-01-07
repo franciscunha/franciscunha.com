@@ -2,19 +2,27 @@
 	let { size } = $props();
 </script>
 
-<!-- From https://www.svgrepo.com/svg/502669/filter-1 -->
+<!-- From https://www.svgrepo.com/svg/340302/filter -->
 <svg
 	width={size + 'rem'}
 	height={size + 'rem'}
-	viewBox="0 0 24 24"
-	fill="none"
+	viewBox="0 0 32 32"
 	xmlns="http://www.w3.org/2000/svg"
 >
+	<defs>
+		<style>
+			.cls-1 {
+				fill: none;
+			}
+		</style>
+	</defs> <title>filter</title>
 	<path
-		d="M17.8258 5H6.17422C5.31987 5 4.85896 6.00212 5.41496 6.65079L9.75926 11.7191C9.91461 11.9004 10 12.1312 10 12.3699V17.382C10 17.7607 10.214 18.107 10.5528 18.2764L12.5528 19.2764C13.2177 19.6088 14 19.1253 14 18.382V12.3699C14 12.1312 14.0854 11.9004 14.2407 11.7191L18.585 6.65079C19.141 6.00212 18.6801 5 17.8258 5Z"
-		stroke="#000000"
-		stroke-width="2"
-		stroke-linecap="round"
-		stroke-linejoin="round"
+		d="M18,28H14a2,2,0,0,1-2-2V18.41L4.59,11A2,2,0,0,1,4,9.59V6A2,2,0,0,1,6,4H26a2,2,0,0,1,2,2V9.59A2,2,0,0,1,27.41,11L20,18.41V26A2,2,0,0,1,18,28ZM6,6V9.59l8,8V26h4V17.59l8-8V6Z"
+	/><rect
+		id="_Transparent_Rectangle_"
+		data-name="&lt;Transparent Rectangle&gt;"
+		class="cls-1"
+		width="32"
+		height="32"
 	/>
 </svg>
