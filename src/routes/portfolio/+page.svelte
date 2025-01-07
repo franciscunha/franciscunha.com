@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { get_all_project_ids, get_all_tags } from '$lib/load_project';
+	import { get_all_metadata, get_all_tags } from '$lib/load_project';
+
 	import ProjectCard from '$lib/project_card.svelte';
 	import Tag from '$lib/tag.svelte';
 	import FilterIcon from '../../lib/icons/filter_icon.svelte';
@@ -7,7 +8,11 @@
 	import { flip } from 'svelte/animate';
 	import { crossfade } from 'svelte/transition';
 
-	let projects = get_all_project_ids();
+	// sorted by year
+	let projects = Object.entries(get_all_metadata())
+		.map(([id, meta]) => ({ id, ...meta })) // flatten {id: meta} to {id, ...meta}[]
+		.sort((a, b) => b.year - a.year); // sort {id, ...meta}[] by year
+
 	let tags = get_all_tags();
 
 	let selected_tags = $state(tags);
@@ -72,7 +77,9 @@
 
 <!-- Project cards -->
 <div class="flex flex-row flex-wrap gap-12 max-md:justify-center md:justify-between">
-	{#each projects as id}
-		<ProjectCard {id} />
+	{#each projects as project}
+		{#if selected_tags.some((tag) => project.tags.includes(tag))}
+			<ProjectCard id={project.id} />
+		{/if}
 	{/each}
 </div>
