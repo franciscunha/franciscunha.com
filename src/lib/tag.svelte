@@ -2,6 +2,8 @@
 	let { children } = $props();
 </script>
 
-<div class="h-[1.75rem] truncate rounded-xl border bg-slate-300 px-2 align-middle">
+<div
+	class="bg-tagcolor h-[1.75rem] truncate rounded-xl border border-bordercolor px-2 align-middle"
+>
 	{@render children()}
 </div>

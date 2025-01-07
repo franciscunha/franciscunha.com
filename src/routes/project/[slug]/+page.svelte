@@ -4,7 +4,7 @@
 	let { data } = $props();
 </script>
 
-<div class="md:rounded-lg md:border-2 md:p-8">
+<div class={'border-bordercolor md:rounded-lg md:border-2 md:p-8'}>
 	<div class="mb-12 flex justify-between max-md:flex-col md:flex-row">
 		<h1 class="mr-8 font-bold">{data.meta.name}</h1>
 		<div class="flex flex-row flex-wrap gap-2 max-md:mt-4 md:justify-end">

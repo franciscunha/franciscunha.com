@@ -8,7 +8,7 @@
 
 <!-- Header -->
 <div
-	class="fixed top-0 z-50 flex h-28 w-full justify-center border-b bg-white/50 px-4 backdrop-blur"
+	class="border-bordercolor bg-bgcolor/50 text-fontcolor fixed top-0 z-50 flex h-28 w-full justify-center border-b px-4 backdrop-blur"
 >
 	<div class="flex h-full w-full items-center justify-between md:w-3/4">
 		<!-- Title -->
@@ -22,7 +22,9 @@
 </div>
 
 <!-- Contents -->
-<div class="mx-4 my-40 flex justify-center">
+<div
+	class="min-w-screen border-bordercolor bg-bgcolor text-fontcolor flex min-h-screen justify-center px-4 pb-12 pt-40"
+>
 	<div class="w-full md:w-3/4">
 		{@render children()}
 	</div>

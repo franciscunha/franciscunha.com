@@ -8,7 +8,7 @@
 
 <a href={'/project/' + id}>
 	<div
-		class="flex h-[30rem] w-[26rem] gap-4 rounded-lg border-2 max-md:flex-col max-md:pb-2 md:h-[16rem] md:w-[36rem] md:pr-4 lg:w-[34vw]"
+		class="border-bordercolor flex h-[30rem] w-[26rem] gap-4 rounded-lg border-2 max-md:flex-col max-md:pb-2 md:h-[16rem] md:w-[36rem] md:pr-4 lg:w-[34vw]"
 	>
 		{#await data}
 			<div class="flex h-full w-full items-center justify-center">
@@ -29,7 +29,7 @@
 				<h2 class="text-xl font-semibold">{data.name}</h2>
 				<!-- Description -->
 				<p
-					class="flex-grow truncate text-balance bg-gradient-to-b from-neutral-900 from-70% bg-clip-text text-sm text-transparent"
+					class={'from-fontcolor flex-grow truncate text-balance bg-gradient-to-b from-70% bg-clip-text text-sm text-transparent'}
 				>
 					{data.summary}
 				</p>
