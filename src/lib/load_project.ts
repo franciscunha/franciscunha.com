@@ -19,7 +19,7 @@ export async function load_project(id: string) {
 			meta: post.metadata
 		};
 	} catch (e) {
-		error(404);
+		error(404, e as string);
 	}
 }
 
@@ -29,7 +29,7 @@ export async function load_metadata(id: string) {
 
 const eagerly_load_all_projects = () =>
 	import.meta.glob('../content/*.md', { eager: true }) as {
-		[path: string]: { default: any; metadata: ProjectMetadata };
+		[path: string]: { metadata: ProjectMetadata };
 	};
 
 const project_id_from_path = (path: string) => path.split('/')[2].split('.')[0];
@@ -42,7 +42,7 @@ export function get_all_project_ids() {
 
 export function get_all_metadata() {
 	const files = eagerly_load_all_projects();
-	let meta: { [id: string]: ProjectMetadata } = {};
+	const meta: { [id: string]: ProjectMetadata } = {};
 
 	for (const path in files) {
 		meta[project_id_from_path(path)] = files[path].metadata;

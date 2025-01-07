@@ -30,5 +30,22 @@ export default ts.config(
 				parser: ts.parser
 			}
 		}
+	},
+	// https://typescript-eslint.io/rules/no-unused-vars/#benefits-over-typescript
+	{
+		rules: {
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{
+					args: 'all',
+					argsIgnorePattern: '^_',
+					caughtErrors: 'all',
+					caughtErrorsIgnorePattern: '^_',
+					destructuredArrayIgnorePattern: '^_',
+					varsIgnorePattern: '^_',
+					ignoreRestSiblings: true
+				}
+			]
+		}
 	}
 );
