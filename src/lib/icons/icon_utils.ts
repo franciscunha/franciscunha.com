@@ -1,1 +1,1 @@
-export const icon_color = "#f8fafc"; // tailwind slate-50
+export const icon_color = '#f8fafc'; // tailwind slate-50

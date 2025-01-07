@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="bg-tagcolor h-[1.75rem] truncate rounded-xl border border-bordercolor px-2 align-middle"
+	class="h-[1.75rem] truncate rounded-xl border border-bordercolor bg-tagcolor px-2 align-middle"
 >
 	{@render children()}
 </div>
