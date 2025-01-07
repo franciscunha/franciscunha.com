@@ -3,8 +3,10 @@
 	import GithubIcon from '$lib/icons/github_icon.svelte';
 	import ItchioIcon from '$lib/icons/itchio_icon.svelte';
 	import LinkedinIcon from '$lib/icons/linkedin_icon.svelte';
-	import { get_highlighted } from '$lib/load_project';
 	import ProjectCard from '$lib/project_card.svelte';
+
+	import { get_highlighted } from '$lib/load_project';
+	import { fly } from 'svelte/transition';
 
 	let socials = [
 		{ href: 'mailto:hello@franciscunha.com', label: 'hello@franciscunha.com', icon: EmailIcon },
@@ -18,7 +20,9 @@
 	];
 
 	let highlighted_projects = get_highlighted();
+
 	let project_index = $state(0);
+	let prev_p_index = $state(0);
 	let project_id = $derived(highlighted_projects[project_index]);
 </script>
 
@@ -57,11 +61,18 @@
 
 		<div class="w-max">
 			{#key project_id}
-				<ProjectCard id={project_id} />
+				<div in:fly={{ x: prev_p_index < project_index ? 100 : -100, duration: 250 }}>
+					<ProjectCard id={project_id} />
+				</div>
 			{/key}
 			<div class="flex w-full flex-row justify-center gap-2">
 				{#each highlighted_projects as _, i}
-					<button onclick={() => (project_index = i)}>
+					<button
+						onclick={() => {
+							prev_p_index = project_index;
+							project_index = i;
+						}}
+					>
 						{#if project_index === i}
 							⬤
 						{:else}

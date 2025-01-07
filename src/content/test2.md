@@ -2,7 +2,7 @@
 name: GHOSTSWAP
 cover: /images/test/cover.png
 summary: This is a different project!
-highlight: false
+highlight: true
 year: 2024
 tags:
   - Game jam
