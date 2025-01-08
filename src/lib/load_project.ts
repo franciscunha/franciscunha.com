@@ -6,6 +6,7 @@ export type ProjectMetadata = {
 	highlight: boolean;
 	summary: string;
 	year: number;
+	order: number;
 	tags: string[];
 	sidebar: string[];
 };
@@ -34,6 +35,13 @@ const eagerly_load_all_projects = () =>
 
 const project_id_from_path = (path: string) => path.split('/')[2].split('.')[0];
 
+const sort_projects = (projects: { [id: string]: ProjectMetadata }) =>
+	Object.entries(projects)
+		// flatten {id: meta} to {id, ...meta}[]
+		.map(([id, meta]) => ({ id, ...meta }))
+		// sort {id, ...meta}[] by year and order
+		.sort((a, b) => (a.year === b.year ? a.order - b.order : b.year - a.year));
+
 export function get_all_project_ids() {
 	const paths = Object.keys(import.meta.glob('../content/*.md', { eager: false }));
 	const ids = paths.map(project_id_from_path);
@@ -51,6 +59,10 @@ export function get_all_metadata() {
 	return meta;
 }
 
+export function get_sorted_projects() {
+	return sort_projects(get_all_metadata());
+}
+
 export function get_all_tags() {
 	const files = eagerly_load_all_projects();
 	let tags: string[] = [];
@@ -63,14 +75,7 @@ export function get_all_tags() {
 }
 
 export function get_highlighted() {
-	const files = eagerly_load_all_projects();
-	let ids: string[] = [];
-
-	for (const path in files) {
-		if (files[path].metadata.highlight) {
-			ids = [...ids, project_id_from_path(path)];
-		}
-	}
-
-	return ids;
+	return get_sorted_projects()
+		.filter((p) => p.highlight)
+		.map((p) => p.id);
 }

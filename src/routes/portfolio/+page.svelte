@@ -3,17 +3,14 @@
 	import Tag from '$lib/tag.svelte';
 	import FilterIcon from '../../lib/icons/filter_icon.svelte';
 
-	import { get_all_metadata, get_all_tags } from '$lib/load_project';
+	import { get_all_tags, get_sorted_projects } from '$lib/load_project';
 	import { reset_filter, select_element } from './filtering';
 
 	import { flip } from 'svelte/animate';
 	import { crossfade } from 'svelte/transition';
 	import FilterResetIcon from '$lib/icons/filter_reset_icon.svelte';
 
-	// sorted by year
-	let projects = Object.entries(get_all_metadata())
-		.map(([id, meta]) => ({ id, ...meta })) // flatten {id: meta} to {id, ...meta}[]
-		.sort((a, b) => b.year - a.year); // sort {id, ...meta}[] by year
+	let projects = get_sorted_projects();
 
 	let selected_tags = $state(get_all_tags());
 	let unselected_tags: string[] = $state([]);
