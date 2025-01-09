@@ -30,6 +30,10 @@
 </div>
 
 <style lang="postcss">
+	.project-wrapper :global(a) {
+		@apply underline;
+	}
+
 	.project-wrapper :global(iframe) {
 		@apply self-center;
 		@apply max-md:w-full;
