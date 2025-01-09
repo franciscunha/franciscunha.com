@@ -1,16 +1,15 @@
 export function select_element(clicked_on: string, selected: string[], unselected: string[]) {
 	// capitalize
 	clicked_on = clicked_on.charAt(0).toUpperCase() + clicked_on.slice(1);
-	
+
 	// find element in both lists
 	const index_selected = selected.indexOf(clicked_on);
 	const index_unselected = unselected.indexOf(clicked_on);
-	
+
 	// if element doesn't exist, do nothing
 	if (index_selected === -1 && index_unselected === -1) {
 		return [selected, unselected];
 	}
-
 
 	// if all elements are currently selected, clicking one will remove all others
 	if (unselected.length === 0) {
