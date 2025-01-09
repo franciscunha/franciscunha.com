@@ -19,7 +19,7 @@
 			<data.content class="project-wrapper" />
 		</div>
 
-		{#if data.meta.sidebar.length > 0}
+		{#if data.meta.sidebar && data.meta.sidebar.length > 0}
 			<div class="flex flex-col gap-8">
 				{#each data.meta.sidebar as src, i}
 					<img {src} alt={'Showcase of ' + data.meta.name + ' #' + i} />
