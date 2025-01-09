@@ -7,10 +7,10 @@ export default {
 	theme: {
 		extend: {},
 		colors: {
-			bordercolor: colors.stone[700],
-			bgcolor: colors.stone[900],
+			bordercolor: colors.teal[800],
+			bgcolor: colors.teal[950],
 			fontcolor: colors.slate[100],
-			tagcolor: colors.emerald[800]
+			tagcolor: colors.teal[600]
 		}
 	},
 
