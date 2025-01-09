@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ProjectCard from '$lib/project_card.svelte';
 	import Tag from '$lib/tag.svelte';
-	import FilterIcon from '../../lib/icons/filter_icon.svelte';
+	import FilterIcon from '$lib/icons/filter_icon.svelte';
 
 	import { get_all_tags, get_sorted_projects } from '$lib/load_project';
 	import { reset_filter, select_element } from './filtering';
@@ -19,6 +19,9 @@
 		([selected_tags, unselected_tags] = reset_filter(selected_tags, unselected_tags));
 	const tag_onclick = (tag: string) =>
 		([selected_tags, unselected_tags] = select_element(tag, selected_tags, unselected_tags));
+
+	let { data } = $props();
+	data.filters.forEach(tag_onclick);
 
 	const [send, receive] = crossfade({
 		duration: (d) => Math.sqrt(d * 200)
