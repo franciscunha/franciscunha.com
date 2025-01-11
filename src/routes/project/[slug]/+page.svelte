@@ -1,5 +1,6 @@
 <script>
 	import Tag from '$lib/tag.svelte';
+	import './prism-darcula.css';
 
 	let { data } = $props();
 	let has_sidebar = data.meta.sidebar && data.meta.sidebar.length > 0;
@@ -58,16 +59,5 @@
 	/* Images will always have a parent <p>, so this are styles for the image wrapper */
 	.project-wrapper :global(p:has(img)) {
 		@apply self-center;
-	}
-
-	/* Code blocks */
-	.project-wrapper :global(pre) {
-		@apply rounded-lg;
-		@apply bg-bordercolor;
-		@apply p-4;
-	}
-
-	.project-wrapper :global(pre > code) {
-		@apply text-wrap;
 	}
 </style>
