@@ -20,4 +20,5 @@ h4 {
 
 html {
 	@apply bg-bgcolor;
+	@apply text-justify;
 }
