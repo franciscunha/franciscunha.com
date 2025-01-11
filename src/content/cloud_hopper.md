@@ -5,7 +5,7 @@ highlight: true
 summary: Jump amongst the clouds of a cute sky archipelago in this 3D platformer. Can you reach the island at the top?
 order: 10
 year: 2024
-tags: 
+tags:
   - Game
   - Godot
   - University project
@@ -20,7 +20,7 @@ sidebar:
 
 Jump amongst the clouds of a cute sky archipelago in this short (~20 min) 3D platformer. Find keys to progress and the optional jewels for an extra challenge. Can you reach the island at the top?
 
-Cloud Hopper was developed as a course assignment within the Game Studies minor at Leiden University. It’s a game of a few firsts for me: my first non-toy project in Godot, my first 3D game, and my first foray in level design. 
+Cloud Hopper was developed as a course assignment within the Game Studies minor at Leiden University. It’s a game of a few firsts for me: my first non-toy project in Godot, my first 3D game, and my first foray in level design.
 
 <iframe frameborder="0" src="https://itch.io/embed/3209353?linkback=true&amp;bg_color=f4f8ff&amp;fg_color=222222&amp;link_color=0484d1&amp;border_color=94c5d0" width="552" height="167" title="Cloud Hopper - itch.io"><a href="https://moonsheep.itch.io/cloud-hopper">Cloud Hopper by Francisco Cunha</a></iframe>
 
@@ -49,7 +49,7 @@ All it does is set a value once the player character is touching it: its `up_dir
 For an improvement to game feel, I also ignore input that is too close to the `up_direction` – this makes no difference when that direction is the “global” up, but helps with the character not coming loose from the wall too easily.
 
 ```GDScript
-# if input is pushing a little away from the up direction but not directly away, 
+# if input is pushing a little away from the up direction but not directly away,
 # remove the influence of that direction from the input.
 # ensures player sticks to the sticky wall unless pushing directly away from it.
 if input.dot(up_direction) > 0 and input.angle_to(up_direction) > deg_to_rad(15):
