@@ -23,7 +23,7 @@
 			/>
 			<!-- Right side: Details -->
 			<div
-				class="flex flex-col justify-between gap-2 py-2 max-md:h-1/2 max-md:px-4 md:h-full md:w-2/5"
+				class="flex flex-col justify-between gap-2 py-2 text-start max-md:h-1/2 max-md:px-4 md:h-full md:w-2/5"
 			>
 				<!-- Title -->
 				<h2 class="text-xl font-semibold">{data.name}</h2>
