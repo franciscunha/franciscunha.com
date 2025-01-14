@@ -11,7 +11,9 @@
 		<h1 class="mr-8 font-bold">{data.meta.name}</h1>
 		<div class="flex flex-row flex-wrap gap-2 max-md:mt-4 md:justify-end">
 			{#each data.meta.tags as tag}
-				<Tag>{tag}</Tag>
+				<a href={'/portfolio/' + tag}>
+					<Tag>{tag}</Tag>
+				</a>
 			{/each}
 			<p class="ml-4 text-lg font-semibold">{data.meta.year}</p>
 		</div>
