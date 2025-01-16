@@ -18,5 +18,5 @@
 </script>
 
 {#key i}
-	<h2 class="text-2xl" in:fly={{ x: 20 }}>{strings[i] || ''}</h2>
+	<h2 class="max-sm:text-xl sm:text-2xl" in:fly={{ x: 20 }}>{strings[i] || ''}</h2>
 {/key}

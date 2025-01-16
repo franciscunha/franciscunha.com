@@ -31,7 +31,7 @@
 </script>
 
 <!-- Tag filters -->
-<div class="flex h-[2rem] flex-row flex-wrap items-center gap-2">
+<div class="flex min-h-[2rem] flex-row flex-wrap items-center gap-2">
 	<!-- Selected tags -->
 	<button onclick={filter_icon_onclick}>
 		{#if unselected_tags.length === 0}
@@ -51,24 +51,28 @@
 		</button>
 	{/each}
 </div>
-<div class="mb-8 flex h-[2rem] flex-row flex-wrap items-center gap-2">
-	<!-- Unselected tags -->
-	<div class="w-[1.5rem]"></div>
-	{#each unselected_tags as tag (tag)}
-		<button
-			onclick={() => tag_onclick(tag)}
-			class="opacity-50"
-			in:receive={{ key: tag }}
-			out:send={{ key: tag }}
-			animate:flip={{ duration: 20 }}
-		>
-			<Tag>{tag}</Tag>
-		</button>
-	{/each}
-</div>
+{#if unselected_tags.length > 0}
+	<div class="mt-2 flex min-h-[2rem] flex-row flex-wrap items-center gap-2">
+		<!-- Unselected tags -->
+		{#each unselected_tags as tag (tag)}
+			<button
+				onclick={() => tag_onclick(tag)}
+				class="opacity-50"
+				in:receive={{ key: tag }}
+				out:send={{ key: tag }}
+				animate:flip={{ duration: 20 }}
+			>
+				<Tag>{tag}</Tag>
+			</button>
+		{/each}
+	</div>
+{/if}
+<div class="my-8"></div>
 
 <!-- Project cards -->
-<div class="flex flex-row flex-wrap gap-12 max-md:justify-center md:justify-between">
+<div
+	class="flex flex-row flex-wrap max-md:justify-center max-sm:gap-8 sm:gap-12 md:justify-between"
+>
 	{#each projects as project}
 		{#if selected_tags.some((tag) => project.tags.includes(tag))}
 			<ProjectCard id={project.id} />

@@ -8,7 +8,10 @@
 
 <a href={'/project/' + id}>
 	<div
-		class="flex h-[30rem] w-[26rem] gap-4 rounded-lg border-2 border-bordercolor max-md:flex-col max-md:pb-2 md:h-[16rem] md:w-[36rem] md:pr-4 lg:w-[34vw]"
+		class={[
+			'flex gap-4 rounded-lg border-2 border-bordercolor max-md:flex-col max-md:pb-2',
+			'max-sm:h-[24rem] max-sm:w-[90vw] sm:h-[30rem] sm:w-[26rem] md:h-[16rem] md:w-[36rem] md:pr-4 lg:w-[34vw]'
+		]}
 	>
 		{#await data}
 			<div class="flex h-full w-full items-center justify-center">
