@@ -13,7 +13,7 @@
 	<div class="flex h-full w-full items-center justify-between md:w-3/4">
 		<!-- Title -->
 		<div>
-			<h1 class="text-4xl">Francisco Cunha</h1>
+			<h1 class="max-sm:text-3xl sm:text-4xl">Francisco Cunha</h1>
 			<LoopingStrings strings={['Game developer', 'Graphics programmer', 'Web developer']} />
 		</div>
 
@@ -22,10 +22,8 @@
 </div>
 
 <!-- Contents -->
-<div
-	class="min-w-screen flex min-h-screen justify-center border-bordercolor bg-bgcolor px-4 pb-12 pt-40 text-fontcolor"
->
-	<div class="w-full md:w-3/4">
+<div class="flex justify-center border-bordercolor bg-bgcolor px-4 pb-12 pt-40 text-fontcolor">
+	<div class="w-screen md:w-3/4">
 		{@render children()}
 	</div>
 </div>

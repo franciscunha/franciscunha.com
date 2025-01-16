@@ -28,7 +28,7 @@
 </script>
 
 <div
-	class="flex w-full place-items-center gap-24 max-md:flex-col-reverse md:flex-row md:justify-center"
+	class="flex w-full place-items-center gap-24 max-lg:flex-col-reverse lg:flex-row lg:justify-center"
 >
 	<div class="max-md:flex max-md:flex-col-reverse">
 		<img
@@ -55,7 +55,7 @@
 
 		<h2 class="my-8 mt-14">
 			<span class="font-semibold">Highlighted projects</span> |
-			<a href="/portfolio" class="underline">All projects</a>
+			<a href="/portfolio" class="underline max-sm:text-base">All projects</a>
 		</h2>
 
 		<div class="w-max max-md:self-center">

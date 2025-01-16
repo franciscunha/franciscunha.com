@@ -6,10 +6,10 @@
 	let has_sidebar = data.meta.sidebar && data.meta.sidebar.length > 0;
 </script>
 
-<div class={'border-bordercolor md:rounded-lg md:border-2 md:p-8'}>
-	<div class="mb-12 flex justify-between max-md:flex-col md:flex-row">
+<div class={'border-bordercolor lg:rounded-lg lg:border-2 lg:p-8'}>
+	<div class="mb-12 flex justify-between max-lg:flex-col lg:flex-row">
 		<h1 class="mr-8 font-bold">{data.meta.name}</h1>
-		<div class="flex flex-row flex-wrap gap-2 max-md:mt-4 md:justify-end">
+		<div class="flex flex-row flex-wrap gap-2 max-lg:mt-4 lg:justify-end">
 			{#each data.meta.tags as tag}
 				<a href={'/portfolio/' + tag}>
 					<Tag>{tag}</Tag>
@@ -20,12 +20,12 @@
 	</div>
 
 	<div class="flex gap-8 max-lg:flex-col lg:flex-row">
-		<div class={['project-wrapper flex flex-col gap-4', has_sidebar && 'md:w-2/3']}>
+		<div class={['project-wrapper flex flex-col gap-4', has_sidebar && 'lg:w-2/3']}>
 			<data.content class="project-wrapper" />
 		</div>
 
 		{#if has_sidebar}
-			<div class="flex flex-col gap-8 md:w-1/3">
+			<div class="flex flex-col gap-8 lg:w-1/3">
 				{#each data.meta.sidebar as src, i}
 					<img {src} alt={'Showcase of ' + data.meta.name + ' #' + i} />
 				{/each}
@@ -41,14 +41,13 @@
 
 	.project-wrapper :global(iframe) {
 		@apply self-center;
-		@apply max-md:w-full;
+		@apply max-lg:w-full;
 	}
 
 	.project-wrapper :global(iframe.video) {
 		@apply aspect-video;
 		@apply h-auto;
-		@apply md:w-4/5;
-		@apply max-md:w-full;
+		@apply lg:w-4/5;
 	}
 
 	.project-wrapper :global(img) {
