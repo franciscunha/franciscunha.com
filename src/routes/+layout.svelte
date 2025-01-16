@@ -1,7 +1,11 @@
 <script lang="ts">
 	import '../app.css';
+
+	import Socials from '$lib/socials.svelte';
 	import LoopingStrings from './looping_strings.svelte';
 	import Navigation from './navigation.svelte';
+
+	import { page } from '$app/state';
 
 	let { children } = $props();
 </script>
@@ -27,3 +31,10 @@
 		{@render children()}
 	</div>
 </div>
+
+<!-- Footer -->
+{#if page.url.pathname !== '/'}
+	<div class="flex w-full justify-center py-4 text-fontcolor">
+		<Socials horizontal={true} />
+	</div>
+{/if}

@@ -1,24 +1,10 @@
 <script>
-	import EmailIcon from '$lib/icons/email_icon.svelte';
-	import GithubIcon from '$lib/icons/github_icon.svelte';
-	import ItchioIcon from '$lib/icons/itchio_icon.svelte';
-	import LinkedinIcon from '$lib/icons/linkedin_icon.svelte';
 	import ProjectCard from '$lib/project_card.svelte';
+	import Socials from '$lib/socials.svelte';
 	import AboutMe from './about_me.md';
 
 	import { get_highlighted } from '$lib/load_project';
 	import { fly } from 'svelte/transition';
-
-	let socials = [
-		{ href: 'mailto:hello@franciscunha.com', label: 'hello@franciscunha.com', icon: EmailIcon },
-		{ href: 'https://github.com/franciscunha', label: 'franciscunha', icon: GithubIcon },
-		{
-			href: 'https://www.linkedin.com/in/francunha/',
-			label: '/in/francunha',
-			icon: LinkedinIcon
-		},
-		{ href: 'https://moonsheep.itch.io/', label: 'moonsheep.itch.io', icon: ItchioIcon }
-	];
 
 	let highlighted_projects = get_highlighted();
 
@@ -38,13 +24,7 @@
 		/>
 		<div class="max-md:-mt-32 max-md:mb-8 md:mt-8">
 			<h1 class="text-bold mb-2">Find me at</h1>
-			<div class="flex flex-col items-start gap-2">
-				{#each socials as social}
-					<a href={social.href} class="flex flex-row items-center gap-2"
-						><social.icon size={2} />{social.label}</a
-					>
-				{/each}
-			</div>
+			<Socials horizontal={false} />
 		</div>
 	</div>
 	<div class="max-w-2xl max-md:flex max-md:flex-col">
