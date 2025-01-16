@@ -1,7 +1,7 @@
 ---
 name: Personal Website
 cover: /images/personal_website/cover.png
-highlight: true
+highlight: false
 summary: The website you're on right now! A home for all my projects, and my personal little corner of the internet. Check out its code on GitHub.
 order: 10
 year: 2025
