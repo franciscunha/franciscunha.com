@@ -2,6 +2,11 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+	@apply bg-bgcolor;
+	@apply text-justify;
+}
+
 h1 {
 	@apply text-3xl;
 }
@@ -18,7 +23,12 @@ h4 {
 	@apply text-lg;
 }
 
-html {
-	@apply bg-bgcolor;
-	@apply text-justify;
+ul {
+	@apply list-disc;
+	@apply ml-4;
+}
+
+ol {
+	@apply list-decimal;
+	@apply ml-4;
 }
