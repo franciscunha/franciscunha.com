@@ -12,7 +12,7 @@
 
 <!-- Header -->
 <div
-	class="fixed top-0 z-50 flex h-28 w-full justify-center border-b border-bordercolor bg-bgcolor/50 px-4 text-fontcolor backdrop-blur"
+	class="fixed top-0 z-30 flex h-28 w-full justify-center border-b border-bordercolor bg-bgcolor/50 px-4 text-fontcolor backdrop-blur"
 >
 	<div class="flex h-full w-full items-center justify-between md:w-3/4">
 		<!-- Title -->
