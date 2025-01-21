@@ -8,7 +8,6 @@ year: 2025
 tags:
   - Web
   - Svelte
-  - Personal project
 sidebar:
 ---
 

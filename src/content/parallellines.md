@@ -9,7 +9,6 @@ tags:
   - Graphics
   - C++
   - CUDA
-  - Personal project
 sidebar:
   - /images/parallellines/head.png
   - /images/parallellines/boggie_body.png
