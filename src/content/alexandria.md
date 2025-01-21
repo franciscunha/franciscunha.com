@@ -5,19 +5,19 @@ highlight: true
 summary: An open-source collaborative platform dedicated to publishing, discussing and developing scientific research. Made for researchers and inspired by Wikipedia and GitHub, with a built-in discussion and peer review system. Developed for the Multimedia Computing Group of TU Delft.
 order: 12
 year: 2024
-tags: 
-    - Web
-    - React
-    - NextJS
+tags:
+  - Web
+  - React
+  - NextJS
 sidebar:
-    - /images/alexandria/homepage.png
-    - /images/alexandria/post-page.png
-    - /images/alexandria/filetree.png
-    - /images/alexandria/file-contents.png
-    - /images/alexandria/version-list.png
-    - /images/alexandria/branch-page-compare.png
-    - /images/alexandria/add-peer-review.png
-    - /images/alexandria/peer-review-section.png
+  - /images/alexandria/homepage.png
+  - /images/alexandria/post-page.png
+  - /images/alexandria/filetree.png
+  - /images/alexandria/file-contents.png
+  - /images/alexandria/version-list.png
+  - /images/alexandria/branch-page-compare.png
+  - /images/alexandria/add-peer-review.png
+  - /images/alexandria/peer-review-section.png
 ---
 
 ![Alexandria's logo](/images/alexandria/logo.png)
@@ -43,6 +43,7 @@ We opted for a broad scope, to present the possibilities of Alexandria, and iden
 We chose to split our team into two groups: me and Miruna Negoitescu worked on the [platform’s frontend](https://github.com/Alexandria-TEMP/Alexandria-Client), while the rest of the team worked on the [backend](https://github.com/Alexandria-TEMP/Alexandria-Server). Besides that, I contributed to architecture and design decisions on both parts of the system.
 
 My contributions focused mainly on the **system-to-user** information flow, rather than user-to-system. Some of the most interesting aspects I implemented were:
+
 - Embedding rendered Quarto projects within a ‘post page’, which itself includes several other UI elements;
 - Allowing the user to navigate through the Quarto project’s source files and read their raw contents, similar to how GitHub projects are displayed;
 - Displaying a side-by-side comparison of Quarto projects, showing proposed changes to users alongside user-contributed reviews to those changes.
