@@ -8,7 +8,6 @@ year: 2024
 tags:
   - Game
   - Godot
-  - University project
 sidebar:
   - /images/cloud_hopper/screenshot_1.png
   - /images/cloud_hopper/screenshot_2.png

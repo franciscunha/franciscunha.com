@@ -8,7 +8,6 @@ year: 2024
 tags:
   - Rust
   - Misc
-  - Personal project
 sidebar:
 ---
 
