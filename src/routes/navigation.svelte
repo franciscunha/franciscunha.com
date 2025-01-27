@@ -3,9 +3,8 @@
 
 	let navigation_items = [
 		{ route: '/', label: 'About' },
-		{ route: '/portfolio', label: 'Portfolio' }
-		// TODO: CV page
-		// { route: '/cv', label: 'CV' }
+		{ route: '/portfolio', label: 'Portfolio' },
+		{ route: '/attachments/Francisco_Cunha_CV.pdf', label: 'CV' }
 	];
 </script>
 
