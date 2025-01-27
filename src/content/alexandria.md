@@ -22,7 +22,7 @@ sidebar:
 
 ![Alexandria's logo](/images/alexandria/logo.png)
 
-[You can find the project’s source on GitHub](https://github.com/Alexandria-TEMP/Alexandria-Client) and <a href="/attachments/alexandria/report.pdf" download="Alexandria - TUDelft Report">read its report here</a>.
+[You can find the project’s source on GitHub](https://github.com/Alexandria-TEMP/Alexandria-Client) and <a href="/attachments/alexandria/Alexandria_Report.pdf">read its report here</a>.
 
 # The platform
 
@@ -48,4 +48,4 @@ My contributions focused mainly on the **system-to-user** information flow, rath
 - Allowing the user to navigate through the Quarto project’s source files and read their raw contents, similar to how GitHub projects are displayed;
 - Displaying a side-by-side comparison of Quarto projects, showing proposed changes to users alongside user-contributed reviews to those changes.
 
-You can find more details about the implementation by [reading the project’s source code on GitHub](https://github.com/Alexandria-TEMP/Alexandria-Client) or <a href="/attachments/alexandria/report.pdf" download="Alexandria - TUDelft Report">reading its report</a>.
+You can find more details about the implementation by [reading the project’s source code on GitHub](https://github.com/Alexandria-TEMP/Alexandria-Client) or <a href="/attachments/alexandria/Alexandria_Report.pdf">reading its report</a>.
