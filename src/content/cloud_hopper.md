@@ -65,7 +65,7 @@ My solution was to use `GeometryInstance3D.transparency` to make any objects bet
 
 ## Procedural decorations
 
-At some point I felt the levels were a bit barren, so I implemented a neat small thing for improved visuals: procedural decorations. This is simply a scene that defines an area, then randomly instantiates select models in that area according to a density parameter. All the flowers, mushrooms, grass and such that you see in the game were put there by the procedural decoration scenes.
+At some point I felt the levels were a bit barren, so I implemented a neat small thing for improved visuals: procedural decorations. This is simply a scene that defines an area, then randomly instantiates select models in that area according to a density parameter. All the flowers, mushrooms, grass and such that you see in the game were put there by the procedural decoration scenes. Background clouds are also generated procedurally through a similar procedure, while also avoiding instancing within the play area.
 
 # Game design
 
