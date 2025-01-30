@@ -6,10 +6,10 @@ summary: This website is currently a work in progress. I’m actively creating e
 order: 1
 year: 0
 tags:
-    - Misc
+  - Misc
 ---
 
-*This website is currently a work in progress. I’m actively creating entries for projects, and so many are still missing. This page shows an overview of all projects I plan on adding to the website in the near future.*
+_This website is currently a work in progress. I’m actively creating entries for projects, and so many are still missing. This page shows an overview of all projects I plan on adding to the website in the near future._
 
 # Games
 
@@ -58,9 +58,9 @@ In a two-person team, developed a 2D stealth platformer for Ludum Dare 53.
 
 Co-authored a [paper on a real life application of decision-making algorithms](https://link.springer.com/article/10.1007/s00291-022-00674-z) published in Springer's OR Spectrum.
 
-### SACI *(en: Informatics centre's decision-making system)*
+### SACI _(en: Informatics centre's decision-making system)_
 
-Built SACI *(en: Informatics centre's decision-making system)*, a website that uses optimization algorithms to aid in academic decision-making.
+Built SACI _(en: Informatics centre's decision-making system)_, a website that uses optimization algorithms to aid in academic decision-making.
 
 Conferece report at "[Anais do Simpósio Brasileiro de Pesquisa Operacional](https://proceedings.science/sbpo/sbpo-2022/trabalhos/saci-sistema-de-apoio-a-decisao-do-centro-de-informatica-o-caso-da-ufpb?lang=pt-br#)" (portuguese).
 
@@ -71,4 +71,3 @@ Formulated and implemented an integer programming model to assign evaluators to 
 ### Meta-heuristic for the minimum latency problem
 
 Using C++, implemented the [GILS-RVND meta-heuristic](https://www.sciencedirect.com/science/article/abs/pii/S037722171200269X) for the minimum latency optimization problem. Learned how to implement algorithms from scientific papers.
-
