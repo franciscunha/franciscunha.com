@@ -48,4 +48,6 @@ My contributions focused mainly on the **system-to-user** information flow, rath
 - Allowing the user to navigate through the Quarto project’s source files and read their raw contents, similar to how GitHub projects are displayed;
 - Displaying a side-by-side comparison of Quarto projects, showing proposed changes to users alongside user-contributed reviews to those changes.
 
+Aside from technical aspects, I also played a role as the team lead, coordinating client and team meetings, and managing the development process through Scrum.
+
 You can find more details about the implementation by [reading the project’s source code on GitHub](https://github.com/Alexandria-TEMP/Alexandria-Client) or <a href="/attachments/alexandria/Alexandria_Report.pdf">reading its report</a>.
