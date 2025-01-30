@@ -16,7 +16,9 @@
 					<Tag>{tag}</Tag>
 				</a>
 			{/each}
-			<p class="ml-4 text-lg font-semibold">{data.meta.year}</p>
+			{#if data.meta.year !== 0}
+				<p class="ml-4 text-lg font-semibold">{data.meta.year}</p>
+			{/if}
 		</div>
 	</div>
 
