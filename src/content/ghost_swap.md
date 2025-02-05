@@ -14,7 +14,7 @@ sidebar:
 
 ![Screenshot of Ghost Swap](/images/ghost_swap/screenshot.png)
 
-**GHOST SWAP** is a 2D twin-stick shooter where you play two roles at the same time! 
+**GHOST SWAP** is a 2D twin-stick shooter where you play two roles at the same time!
 
 Your light ghost defeats dark enemies with projectiles, and your dark ghost can punch light enemies to smithereens. You must constantly reverse their roles to stay alive!
 
