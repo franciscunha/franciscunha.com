@@ -17,11 +17,9 @@ _This website is currently a work in progress. I’m actively creating entries f
 
 ~~Solo developed a 3D platformer using the Godot engine. Implemented two level building blocks that introduce unique gameplay mechanics, a 3D character controller, procedural level decorations, and an assortment of other gameplay features.~~
 
-### Ghost Swap
+### ~~[Ghost Swap](/project/ghost_swap)~~
 
-In a two-person team, developed a 2D twin-stick shooter for the GMTK Game Jam 2023, in which it ranked 250 out of 6771 games.
-
-[Itcho.io page](https://moonsheep.itch.io/ghost-swap).
+~~In a two-person team, developed a 2D twin-stick shooter for the GMTK Game Jam 2023, in which it ranked 250 out of 6771 games.~~
 
 ### Papercut
 
