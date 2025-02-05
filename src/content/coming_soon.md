@@ -7,7 +7,7 @@ order: 1
 year: 0
 tags:
   - Misc
-  - Games
+  - Game
   - Graphics
   - Operations research
 ---
