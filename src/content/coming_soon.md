@@ -7,6 +7,9 @@ order: 1
 year: 0
 tags:
   - Misc
+  - Games
+  - Graphics
+  - Operations research
 ---
 
 _This website is currently a work in progress. I’m actively creating entries for projects, and so many are still missing. This page shows an overview of all projects I plan on adding to the website in the near future._
