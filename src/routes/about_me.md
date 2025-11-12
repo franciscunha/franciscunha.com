@@ -1,4 +1,4 @@
-Hi! My name is **Francisco Cunha**, and I’m a programmer with broad experience: from *web development* to *optimization algorithms* to *systems programming*. I'm a team player with a penchant for leadership, naturally passionate and curious, and always looking for opportunities to grow as a developer and as a person.
+Hi! My name is **Francisco Cunha**, and I’m a programmer with broad experience: from _web development_ to _optimization algorithms_ to _systems programming_. I'm a team player with a penchant for leadership, naturally passionate and curious, and always looking for opportunities to grow as a developer and as a person.
 
 I'm a recent **Computer Science and Engineering** graduate from **TU Delft**, where I graduated cum laude. My time at TU Delft was incredible and taught me a lot, and now I'm ready for the next chapter in my life (maybe with your team?)
 
