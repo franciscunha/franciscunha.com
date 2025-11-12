@@ -1,7 +1,7 @@
 ---
 name: Ghost Swap
 cover: /images/ghost_swap/cover.png
-highlight: true
+highlight: false
 summary: Play two characters at once in this mind-bending twin stick shooter! Ranked top 4% at the GMTK Game Jam 2023.
 order: 10
 year: 2023

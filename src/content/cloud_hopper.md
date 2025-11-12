@@ -3,7 +3,7 @@ name: Cloud Hopper
 cover: /images/cloud_hopper/cover.png
 highlight: true
 summary: Jump amongst the clouds of a cute sky archipelago in this 3D platformer. Can you reach the island at the top?
-order: 10
+order: 12
 year: 2024
 tags:
   - Game
