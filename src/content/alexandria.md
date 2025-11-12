@@ -3,7 +3,7 @@ name: Alexandria
 cover: /images/alexandria/cover.png
 highlight: true
 summary: An open-source collaborative platform dedicated to publishing, discussing and developing scientific research. Made for researchers and inspired by Wikipedia and GitHub, with a built-in discussion and peer review system. Developed for the Multimedia Computing Group of TU Delft.
-order: 12
+order: 9
 year: 2024
 tags:
   - Web

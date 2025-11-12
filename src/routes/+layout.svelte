@@ -18,7 +18,7 @@
 		<!-- Title -->
 		<div>
 			<h1 class="max-sm:text-3xl sm:text-4xl">Francisco Cunha</h1>
-			<LoopingStrings strings={['Game developer', 'Graphics programmer', 'Web developer']} />
+			<LoopingStrings strings={['Software developer', 'Researcher', 'Your new hire :)']} />
 		</div>
 
 		<Navigation />
