@@ -107,3 +107,19 @@ _[Itcho.io page](https://maximecaux.itch.io/papercut)_
 
 In a two-person team, developed a 2D stealth platformer for Ludum Dare 53.
 
+---
+### **Nibble calculator**
+
+Used IC chips with basic logic gates to build combinatorial and sequential circuits that made up a calculator. It supports addition and subtraction operations for 4-bit numbers and has a memory capable of storing two values.
+
+---
+### **Billboard Hot 100 analysis**
+
+Performed throughout data analysis on musical characteristics of 5100 songs that have appeared in the Billboard Hot 100 between the years of 1965 and 2015. Report is available in portuguese.
+
+---
+### **YOLO Mask detection**
+
+_[GitHub page](https://github.com/Felipehonorato1/mask_detection)_
+
+Built a computer vision application that used YOLOv5 to detect if someone is not using a sanitary mask, then sending a notification via Telegram bot.
