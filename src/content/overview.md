@@ -1,6 +1,6 @@
 ---
 name: Project overview
-cover: /images/coming_soon/cover.png
+cover: /images/overview/cover.png
 highlight: true
 summary: An overview of projects I've worked on throughout my career as a computer scientist, including many that are still missing dedicated project pages.
 order: 1
