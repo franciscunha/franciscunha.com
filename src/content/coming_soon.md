@@ -1,74 +1,109 @@
 ---
-name: Coming soon!
+name: Project overview
 cover: /images/coming_soon/cover.png
-highlight: false
-summary: This website is currently a work in progress. I’m actively creating entries for projects, and so many are still missing. This page shows an overview of all projects I plan on adding to the website in the near future.
+highlight: true
+summary: An overview of projects I've worked on throughout my career as a computer scientist, including many that are still missing dedicated project pages.
 order: 1
-year: 0
+year: 2025
 tags:
   - Misc
-  - Game
+  - Web
   - Graphics
   - Operations research
 ---
 
-_This website is currently a work in progress. I’m actively creating entries for projects, and so many are still missing. This page shows an overview of all projects I plan on adding to the website in the near future._
+<!-- _An overview of projects I've worked on throughout my career as a computer scientist, including many that are still missing dedicated project pages._ -->
+<!-- --- -->
 
-# Games
+### **Alexandria**
 
-### ~~[Cloud Hopper](/project/cloud_hopper)~~
+_[Project page](/project/alexandria)_
 
-~~Solo developed a 3D platformer using the Godot engine. Implemented two level building blocks that introduce unique gameplay mechanics, a 3D character controller, procedural level decorations, and an assortment of other gameplay features.~~
+- Developed the React/Next.js front-end for a social media website that uses Quarto projects as posts that may be authored collaboratively by multiple users.
+- Led a team of 5 developers, coordinating team meetings, stakeholder communication, and managing the development process through SCRUM.
+- Implemented a Dockerized workflow and GitLab CI/CD pipeline to automate builds and testing.
 
-### ~~[Ghost Swap](/project/ghost_swap)~~
+---
+### **Procedural texturing for pixel art**
 
-~~In a two-person team, developed a 2D twin-stick shooter for the GMTK Game Jam 2023, in which it ranked 250 out of 6771 games.~~
+_[GitHub page](https://github.com/franciscunha/pixel-art-texturing)_
 
-### Papercut
+- Implemented an image processing tool that procedurally adds detail to pixel art. The project is written in Python using OpenCV for image manipulation.
+- Developed novel method to create vector fields from simple user drawings through solving a Poisson equation,
+implemented using NumPy.
 
-In a two-person team, developed a 2D stealth platformer for Ludum Dare 53.
+---
+### **Minimizing energy consumption in a real-life classroom assignment problem**
 
-[Itcho.io page](https://maximecaux.itch.io/papercut).
+Co-authored [a Springer-published paper](https://link.springer.com/article/10.1007/s00291-022-00674-z) proposing an algorithm that reduced university energy consumption by 26% through better assigning its 3046 classes to 97 locations.
 
-# Graphics
+---
+### **SACI _(en: Informatics centre's decision-making system)_**
 
-### ~~[Parallellines](/project/parallellines)~~
+Led development of the the SACI online platform across front-end, back-end and optimization models. SACI uses optimization-based tools for decision-making and has been used by 300+ students and faculty members
 
-~~Using CUDA and C++, implemented a GPU software rasterizer from scratch to replicate OpenGL's basic functionality. It can render a 3D model with a diffuse and specular texture and a normal map, through user-defined vertex and fragment shaders.~~
+Conferece report at [Anais do Simpósio Brasileiro de Pesquisa Operacional](https://proceedings.science/sbpo/sbpo-2022/trabalhos/saci-sistema-de-apoio-a-decisao-do-centro-de-informatica-o-caso-da-ufpb?lang=pt-br#) (portuguese).
 
-### Raytracer features
+---
+### **Personal website**
 
-- Added a bounding volume hierarchy to a basic raytracer, using a surface area heuristic with binning as the splitting criterion.
-- Implemented a bloom post-processing effect with a 2D gaussian filter.
+_[Project page](https://franciscunha.com/project/personal_website)_
+
+Built a portfolio website using the Svelte framework, which programatically creates project pages based on a collection of markdown files.
+
+---
+### **Parallellines**
+
+_[Project page](/project/parallellines)_
+
+Using CUDA and C++, implemented a GPU software rasterizer from scratch to replicate OpenGL's basic functionality. It can render a 3D model with a diffuse and specular texture and a normal map, through user-defined vertex and fragment shaders.
+
+
+---
+### **Sortify**
+
+_[Project page](/project/sortify)_ 
+
+Using Rust to interface with the Spotify API, built a command line application to organize playlists.
+
+---
+### **Raytracer features**
+
+Added several features to a custom raytracer implemented in C++: 
+- Added a bounding volume hierarchy, using a surface area heuristic with binning as the splitting criterion;
+- Implemented a bloom post-processing effect with a 2D gaussian filter;
 - Added support for contributions of glossy reflective rays.
 
-# Other
-
-### ~~[Alexandria](/project/alexandria)~~
-
-- ~~Using React and NextJS, developed the front-end for a collaborative platform dedicated to scientific research, with built-in discussion and peer review systems.~~
-- ~~Led a 5 person team, coordinating client and team meetings, and managing the development process through Scrum.~~
-
-### ~~[Sortify](/project/sortify)~~
-
-~~Using Rust to interface with the Spotify API, built a command line application to organize playlists.~~
-
-# Operations research
-
-### Minimizing energy consumption in a real-life classroom assignment problem
-
-Co-authored a [paper on a real life application of decision-making algorithms](https://link.springer.com/article/10.1007/s00291-022-00674-z) published in Springer's OR Spectrum.
-
-### SACI _(en: Informatics centre's decision-making system)_
-
-Built SACI _(en: Informatics centre's decision-making system)_, a website that uses optimization algorithms to aid in academic decision-making.
-
-Conferece report at "[Anais do Simpósio Brasileiro de Pesquisa Operacional](https://proceedings.science/sbpo/sbpo-2022/trabalhos/saci-sistema-de-apoio-a-decisao-do-centro-de-informatica-o-caso-da-ufpb?lang=pt-br#)" (portuguese).
-
-### Evaluator assignment and scheduling problem
+---
+### **Evaluator assignment and scheduling problem**
 
 Formulated and implemented an integer programming model to assign evaluators to grant proposals while simulteneously scheduling meetings amongst evaluators of the same proposal.
 
-### Meta-heuristic for the minimum latency problem
+---
+### **Meta-heuristic for the minimum latency problem**
+
+_[GitHub page](https://github.com/franciscunha/MLP)_
 
 Using C++, implemented the [GILS-RVND meta-heuristic](https://www.sciencedirect.com/science/article/abs/pii/S037722171200269X) for the minimum latency optimization problem. Learned how to implement algorithms from scientific papers.
+
+---
+### **Cloud Hopper**
+
+_[Project page](/project/cloud_hopper)_
+
+Solo developed a 3D platformer using the Godot engine. Implemented two level building blocks that introduce unique gameplay mechanics, a 3D character controller, procedural level decorations, and an assortment of other gameplay features.
+
+---
+### **Ghost Swap**
+
+_[Project page](/project/ghost_swap)_
+
+In a two-person team, developed a 2D twin-stick shooter for the GMTK Game Jam 2023, in which it ranked 250 out of 6771 games.
+
+---
+### **Papercut**
+
+_[Itcho.io page](https://maximecaux.itch.io/papercut)_
+
+In a two-person team, developed a 2D stealth platformer for Ludum Dare 53.
+
