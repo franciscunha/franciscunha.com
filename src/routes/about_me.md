@@ -1,4 +1,4 @@
-Hi! My name is **Francisco Cunha**, a cum laude Computer Science and Engineering graduate from **TU Delft**, with broad experience going across full-stack development, optimization algorithms, and low-level systems. 
+Hi! My name is **Francisco Cunha**, a cum laude Computer Science and Engineering graduate from **TU Delft**, with broad experience going across full-stack development, optimization algorithms, and low-level systems.
 
 I’ve worked as an optimization researcher, teaching assistant and head TA for core CSE courses, and have led multiple development teams. These experiences strengthened both my technical foundations, and my ability to work within teams, communicating with technical and non-technical stakeholders. I’m naturally passionate and curious, and always looking for opportunities to grow as a developer and as a person.
 
